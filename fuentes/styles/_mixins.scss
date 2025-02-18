@@ -1,0 +1,17 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsive($size) {
+    @if $size == tablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $size == mobile {
+        @media (max-width: 750px) {
+            @content;
+        }
+    }
+}

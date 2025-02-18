@@ -1,0 +1,397 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+  margin: 0; /* Elimina los márgenes predeterminados del navegador */
+  background-color: #f6f1eb; /* Aplica un color de fondo suave */
+}
+
+/* Header styles: Estilos para el encabezado */
+.header {
+  display: flex; /* Usa un contenedor flexible */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Distribuye el contenido equitativamente */
+  padding: 10px 20px; /* Espaciado interno del header */
+  background-color: #efe7dd; /* Color de fondo del header */
+  font-family: "Playfair Display", serif; /* Tipografía elegante para el encabezado */
+}
+
+.logo img {
+  width: 150px; /* Ancho fijo para el logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.barra_busqueda {
+  flex-grow: 1; /* Permite que la barra de búsqueda ocupe el espacio disponible */
+  margin: 0 20px; /* Añade margen horizontal */
+  display: flex; /* Contenedor flexible para los elementos internos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.barra_busqueda input {
+  flex: 1; /* Permite que el input ocupe el espacio restante */
+  padding: 8px; /* Espaciado interno del input */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.boton_busqueda {
+  margin-left: 8px; /* Espaciado a la izquierda del botón */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.actions {
+  display: flex; /* Contenedor flexible para los botones */
+  gap: 10px; /* Espaciado entre los botones */
+}
+
+.boton_registro {
+  background-color: #644434; /* Color de fondo marrón oscuro */
+  color: white; /* Texto blanco */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 15px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton_carrito {
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  font-size: 18px; /* Tamaño del texto o ícono del carrito */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Menu styles: Estilos para el menú de navegación */
+.menu {
+  display: flex; /* Contenedor flexible para el menú */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  gap: 30px; /* Espaciado entre los elementos del menú */
+  background-color: #efe7dd; /* Color de fondo del menú */
+  padding: 10px 0; /* Espaciado interno vertical */
+}
+
+.objeto_menu {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 16px; /* Tamaño del texto */
+  color: #5e4630; /* Color del texto */
+  font-weight: bold; /* Negrita para los textos del menú */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+  padding: 15px 15px; /* Espaciado interno para un área de clic más grande */
+  transition: background-color 0.3s, color 0.4s; /* Transiciones suaves al pasar el cursor */
+}
+
+.objeto_menu:hover {
+  color: white; /* Cambia el color del texto al pasar el cursor */
+  background-color: #8c634f; /* Cambia el color de fondo */
+  border-radius: 5px; /* Bordes redondeados para el hover */
+}
+
+.objeto_menu.activo {
+  background-color: #BCA48C; /* Color de fondo para el elemento activo */
+  color: #8c634f; /* Color de texto para el elemento activo */
+  border-radius: 5px; /* Bordes redondeados para el elemento activo */
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 2em; /* Espaciado interno del área principal */
+}
+
+/*//////////////////////////////////////////////////////////////SOBRE NOSOTROS/////////////////////////////////////////////////////////*/
+/* Estilo del contenedor principal "Sobre Nosotros" */
+#sobre-nosotros {
+  background-color: #BF8563; /* Fondo de color marrón cálido */
+  padding: 30px; /* Espaciado interno en todos los lados */
+  border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+}
+
+/* Estilos para el título principal dentro de "Sobre Nosotros" */
+.sobre-nosotros h1 {
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+  color: #fff; /* Texto en blanco */
+  font-size: 24px; /* Tamaño del texto del título */
+}
+
+/* Estilos para los párrafos dentro de "Sobre Nosotros" */
+.sobre-nosotros p {
+  font-size: 16px; /* Tamaño del texto estándar */
+  color: #f8f6f4; /* Texto en un color blanco suave */
+  margin-bottom: 10px; /* Espacio inferior entre párrafos */
+  font-family: "Montserrat", serif; /* Tipografía complementaria */
+}
+
+/* Estilo para los botones dentro de "Sobre Nosotros" */
+.sobre-nosotros button {
+  background-color: #fff; /* Fondo blanco para contraste */
+  color: #c89f87; /* Texto en un color marrón claro */
+  border: none; /* Sin bordes */
+  border-radius: 20px; /* Bordes redondeados para un diseño elegante */
+  padding: 8px 16px; /* Espaciado interno del botón */
+  font-size: 14px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Estilo para las imágenes dentro de "Sobre Nosotros" */
+.sobre-nosotros img {
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  max-width: 50%; /* Ajusta el ancho máximo de las imágenes al 50% */
+  height: auto; /* Mantiene la proporción original de las imágenes */
+}
+
+/* Contenedor para texto e imagen alineados horizontalmente */
+.bloque_imagen_texto {
+  display: flex; /* Disposición flexible en una fila */
+  justify-content: space-between; /* Espacio uniforme entre texto e imagen */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  gap: 20px; /* Espaciado horizontal entre los elementos */
+}
+
+/* Estilo para el texto dentro del bloque de imagen y texto */
+.contenido_texto {
+  flex: 1; /* Permite que el texto ocupe más espacio que la imagen */
+  margin-top: 20px; /* Añade espacio superior */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Estilo de los párrafos dentro del bloque de texto */
+.bloque_imagen_texto p {
+  max-width: 100%; /* Asegura que el texto no exceda su contenedor */
+  line-height: 1.6; /* Incrementa el espaciado entre líneas para mejor legibilidad */
+  margin-bottom: 30px; /* Espaciado inferior para separación entre párrafos */
+  font-family: "Montserrat", serif; /* Tipografía complementaria */
+}
+
+/* Estilo para las imágenes dentro del bloque de imagen y texto */
+.bloque_imagen_texto img {
+  max-width: 40%; /* Tamaño máximo del 40% del contenedor */
+  height: auto; /* Mantiene la proporción original */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los títulos dentro del texto del bloque */
+.contenido_texto h1 {
+  margin-bottom: 20px; /* Espaciado inferior entre el título y el contenido */
+  font-size: 24px; /* Tamaño del texto del título */
+  color: #644434; /* Color marrón oscuro */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Estilo para los botones dentro del texto del bloque */
+.contenido_texto button {
+  padding: 10px 20px; /* Espaciado interno horizontal y vertical */
+  background-color: #502e27; /* Color de fondo marrón oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin-top: 15px; /* Espaciado superior para separación con otros elementos */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Estilo hover para los botones dentro del bloque */
+.contenido_texto button:hover {
+  background-color: #502e27; /* Color de fondo al pasar el cursor */
+}
+
+/*/////////////////////////////////////////////////////////////////////INICIO/////////////////////////////////////////////////////////////*/
+/* Sección principal de "Inicio" */
+#inicio {
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 2% 0; /* Espaciado vertical arriba y abajo */
+  background-color: #f0ebe3; /* Color de fondo en tonos claros */
+}
+
+/* Estilo para un contenedor genérico con contenido */
+.content {
+  background-color: #BF8563; /* Fondo marrón cálido */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 20%; /* Altura fija */
+  border-radius: 2%; /* Bordes redondeados */
+}
+
+/* Estilo para la sección "Te puede interesar" */
+.interes {
+  text-align: center; /* Centra el contenido horizontalmente */
+  background-color: #f6f1eb; /* Fondo en un tono muy claro */
+  padding: 5%; /* Espaciado interno uniforme */
+}
+
+.interes h2 {
+  font-size: 150%; /* Tamaño del texto del título */
+  color: #5e4630; /* Color marrón oscuro para el texto */
+  margin-bottom: 5%; /* Espaciado inferior */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Contenedor de opciones dentro de "Te puede interesar" */
+.opciones {
+  display: flex; /* Disposición en fila */
+  justify-content: center; /* Centra las opciones horizontalmente */
+  gap: 10%; /* Espaciado uniforme entre las opciones */
+}
+
+/* Estilo para cada opción individual */
+.opcion {
+  width: 200px; /* Ancho fijo */
+  height: 200px; /* Altura fija */
+  display: flex; /* Centra contenido interno */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto dentro de la opción */
+  font-size: 90%; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  color: #502e27; /* Color marrón oscuro */
+  border: 0.5% solid #8c634f; /* Borde marrón más claro */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación de transformación */
+  background-size: cover; /* Imagen de fondo ajustada al tamaño del contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  overflow: hidden; /* Oculta el contenido desbordado */
+  opacity: 0.5; /* Transparencia inicial */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Texto dentro de las opciones */
+.opcion p {
+  color: black; /* Color marrón oscuro */
+}
+
+/* Imágenes específicas para cada opción */
+#opcion1 {
+  background-image: url("../img/panetone1536x.jpg"); /* Imagen para "Más vendido" */
+}
+
+#opcion2 {
+  background-image: url("../img/tartaFresas1920.jpg"); /* Imagen para "Productos veganos" */
+}
+
+#opcion3 {
+  background-image: url("../img/torrijas1920x1280.jpg"); /* Imagen para "Productos locales" */
+}
+
+#opcion4 {
+  background-image: url("../img/magdalenaChocolate1920x1280.jpg"); /* Imagen para "Sin azúcar" */
+}
+
+/* Efectos hover para las opciones */
+.opcion:hover {
+  transform: scale(1.1); /* Agranda la opción */
+  box-shadow: 0 4% 8% rgba(0, 0, 0, 0.2); /* Incrementa la sombra */
+}
+
+/* Ajusta el texto dentro de las opciones para evitar cortes */
+.opcion span {
+  display: inline-block; /* Mantiene el texto en bloque */
+  width: 90%; /* Ajusta el ancho del texto */
+  text-align: center; /* Centra el texto */
+}
+
+/* Sección de procedencia de productos */
+#procedencia {
+  text-align: justify; /* Alinea el texto a la izquierda */
+  padding: 2%; /* Espaciado interno uniforme */
+  background-color: #BF8563; /* Fondo marrón cálido */
+}
+
+/* Estilo para las imágenes dentro de "Procedencia" */
+#procedencia img {
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  max-width: 20%; /* Ancho máximo de 250px */
+  margin-top: 1em; /* Espaciado superior */
+  border-radius: 10px; /* Bordes redondeados */
+  display: flex; /* Asegura que la imagen se ajuste bien */
+}
+
+/* Contenedor de texto e imagen alineados horizontalmente en "Procedencia" */
+.bloque_granja_imagen_texto {
+  display: flex; /* Disposición en fila */
+  justify-content: space-between; /* Espacio uniforme entre texto e imagen */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  gap: 20px; /* Espaciado horizontal entre los elementos */
+}
+
+/* Estilo del texto dentro del bloque de procedencia */
+.contenido_texto_granja {
+  flex: 1; /* El texto ocupa más espacio */
+  margin-top: 20px; /* Espaciado superior */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+.columnas{
+    column-count: 2; /* Número de columnas */
+    column-gap: 5%; /* Espacio entre columnas */
+}
+
+/* Estilo para los párrafos dentro de "Procedencia" */
+.bloque_granja_imagen_texto p {
+  max-width: 100%; /* Asegura que el texto no exceda el contenedor */
+  line-height: 1.6; /* Incrementa la legibilidad */
+  margin-bottom: 30px; /* Espaciado inferior */
+  font-family: "Montserrat", serif; /* Tipografía complementaria */
+}
+
+/* Estilo para las imágenes dentro del bloque de procedencia */
+.bloque_granja_imagen_texto img {
+  max-width: 40%; /* Imagen ocupa hasta el 40% del contenedor */
+  height: auto; /* Mantiene la proporción original */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Títulos dentro de "Procedencia" */
+.contenido_texto_granja h1 {
+  margin-bottom: 20px; /* Espaciado inferior */
+  font-size: 24px; /* Tamaño del texto del título */
+  color: #644434; /* Color marrón oscuro */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Botones dentro de "Procedencia" */
+.contenido_texto_granja button {
+  padding: 10px 20px; /* Tamaño del botón */
+  background-color: #502e27; /* Fondo marrón oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  margin-top: 15px; /* Espaciado superior */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+}
+
+/* Efecto hover para los botones */
+.contenido_texto_granja button:hover {
+  background-color: #502e27; /* Fondo oscuro al pasar por encima */
+}
+
+/*//////////////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////// */
+/* Estilo general del footer */
+footer {
+  display: flex; /* Crea un diseño en fila para los elementos hijos */
+  justify-content: space-between; /* Espacia los elementos extremos (izquierda y derecha) */
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+  background-color: #644434; /* Color de fondo marrón oscuro */
+  padding: 2% 4%; /* Espaciado interno: 2% arriba/abajo, 4% izquierda/derecha */
+  color: white; /* Color del texto en blanco */
+}
+
+/* Contenedor para las redes sociales */
+footer .social-media {
+  display: flex; /* Disposición en fila de los íconos de redes sociales */
+  gap: 5%; /* Espaciado horizontal uniforme entre los íconos */
+}
+
+/* Estilo de las imágenes de las redes sociales */
+footer .social-media{
+  font-size: 150%;
+}
+
+/* Contenedor para la información del footer */
+footer .footer-info {
+  text-align: right; /* Alinea el contenido del texto a la derecha */
+}
+
+/* Párrafos dentro de la información del footer */
+footer .footer-info p {
+  margin: 1% 0; /* Espaciado vertical uniforme entre los párrafos */
+  color: white; /* Asegura que el texto sea blanco, aunque ya esté definido en el contenedor padre */
+}
