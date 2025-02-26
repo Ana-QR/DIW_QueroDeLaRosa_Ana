@@ -7,11 +7,11 @@
 
 // Mixin para hacer responsive
 @mixin responsive($size) {
-    @if $size == tablet {
+    @if $size == 'tablet' {
         @media (max-width: 1024px) {
             @content;
         }
-    } @else if $size == mobile {
+    } @else if $size == 'mobile' {
         @media (max-width: 750px) {
             @content;
         }

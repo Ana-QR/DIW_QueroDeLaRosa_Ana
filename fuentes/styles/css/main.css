@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Importing partials */
+/* Llamada a elementos */
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +27,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Asignacion de variables para interpolacion */
+/* Clase auxiliar para heredar */
+.auxiliar, #sobre-nosotros .bloque_imagen_texto .boton_mas, #sobre-nosotros .bloque_granja_imagen_texto .boton_mas, #procedencia .bloque_imagen_texto .boton_mas, #procedencia .bloque_granja_imagen_texto .boton_mas, #sobre-nosotros .bloque_imagen_texto button, #sobre-nosotros .bloque_granja_imagen_texto button, #procedencia .bloque_imagen_texto button, #procedencia .bloque_granja_imagen_texto button, .header .actions .boton_registro {
+  background-color: #644434;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
 }
 
 /* Estilos generales */
@@ -77,14 +89,6 @@ body {
   gap: 10px;
   margin: 10px 10px;
 }
-.header .actions .boton_registro {
-  background-color: #644434;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-family: "Playfair Display", serif;
-  color: white;
-}
 .header .actions .boton_carrito {
   border: none;
   padding: 8px;
@@ -96,7 +100,7 @@ body {
   align-items: center;
 }
 
-/* Menu styles */
+/* Estilos del menú */
 .menu {
   display: flex;
   justify-content: center;
@@ -107,7 +111,6 @@ body {
   text-decoration: none;
   color: black;
   font-family: "Playfair Display", serif;
-  font-size: 25px;
 }
 .menu .objeto_menu_activo {
   background-color: #BCA48C;
@@ -152,26 +155,12 @@ main {
   flex-shrink: 0; /* Evita que se reduzca demasiado */
 }
 #sobre-nosotros .bloque_imagen_texto button, #sobre-nosotros .bloque_granja_imagen_texto button, #procedencia .bloque_imagen_texto button, #procedencia .bloque_granja_imagen_texto button {
-  background-color: #644434;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-family: "Playfair Display", serif;
-  color: white;
-  margin-top: 20px; /* Add margin to position the button below the paragraph */
+  margin-top: 20px; /* Añadir margen para posicionar el botón debajo del párrafo */
   margin-left: 20px;
 }
 #sobre-nosotros .bloque_imagen_texto .boton_mas, #sobre-nosotros .bloque_granja_imagen_texto .boton_mas, #procedencia .bloque_imagen_texto .boton_mas, #procedencia .bloque_granja_imagen_texto .boton_mas {
-  background-color: #644434;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-family: "Playfair Display", serif;
-  color: white;
-  margin-top: 20px; /* Add margin to position the button below the paragraph */
-  align-self: flex-start; /* Ensure the button aligns to the start of the flex container */
+  margin-top: 20px; /* Añadir margen para posicionar el botón debajo del párrafo */
+  align-self: flex-start; /* Asegurar que el botón se alinee al inicio del contenedor flex */
 }
 
 #productos {
@@ -191,7 +180,7 @@ main {
 }
 #productos .opciones {
   display: flex;
-  justify-content: space-between; /* Add space between the products */
+  justify-content: space-between; /* Añadir espacio entre los productos */
   gap: 15px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -243,7 +232,7 @@ main {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1; /* Lower z-index to position behind images */
+  z-index: 1; /* Reducir z-index para posicionar detrás de las imágenes */
 }
 #productos .fa-chevron-left {
   left: 10px;
@@ -252,7 +241,7 @@ main {
   right: 10px;
 }
 
-/* Estilos del footer */
+/* Estilos del pie de página */
 footer {
   display: flex;
   background-color: #644434;
@@ -260,8 +249,7 @@ footer {
   align-items: center;
   padding: 20px;
   margin-top: auto;
-  /* Social media section styles */
-  /* Footer styles */
+  /* Estilos de la sección de redes sociales */
 }
 footer .social-media {
   padding: 30px 0;
@@ -283,7 +271,7 @@ footer .footer-info a {
   color: white;
 }
 
-/* Responsive styles */
+/* Estilos responsivos */
 @media (max-width: 1024px) {
   .logo {
     width: clamp(80px, 10vw, 140px);

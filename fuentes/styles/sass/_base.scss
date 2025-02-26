@@ -1,21 +1,15 @@
-$text-size:(
-    pequenio: 12px,
-    base: 16px,
-    grande: 20px,
-    iconos: 50px
-);
+@use "../sass/variables" as var;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $fuente-secundaria;
+    font-family: var.$fuente-secundaria;
     font-size: 25px;
 }
 
 header {
-    @include text-size(grande);
-    background-color: $color-encabezado;
+    background-color: var.$color-encabezado;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -23,14 +17,12 @@ header {
 }
 
 body {
-    @include text-size(base);
-    background-color: $color-fondo;
-    color: $color-texto-claro;
+    background-color: var.$color-fondo;
+    color: var.$color-texto-claro;
 }
 
 footer {
-    @include text-size(pequenio);
-    background-color: $color-encabezado;
+    background-color: var.$color-encabezado;
     padding: 10px;
     display: flex;
     justify-content: center;

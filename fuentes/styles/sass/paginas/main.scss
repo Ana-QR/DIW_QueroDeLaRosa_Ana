@@ -1,11 +1,12 @@
 /* Llamada a elementos */
 @use "../variables" as var;
 @use "../base";
-@import "../mixins";
+@use "../mixins";
 
 /*Asignacion de variables para interpolacion */
-$color-fondo: var.$color-fondo;
+$color-background: var.$color-fondo;
 $fuente-principal: var.$fuente-principal;
+$fuente-secundaria: var.$fuente-secundaria;
 $color-texto-claro: var.$color-texto-claro;
 $color-encabezado: var.$color-encabezado;
 $color-secundario: var.$color-secundario;
@@ -21,13 +22,13 @@ $color-texto-oscuro: var.$color-texto-oscuro;
   padding: 8px 16px;
   cursor: pointer;
   font-family: $fuente-principal;
-  color: white;
+  color: $color-texto-claro;
 }
 
 /* Estilos generales */
 body {
   margin: 0;
-  background-color: $color-fondo;
+  background-color: $color-background;
   font-family: $fuente-principal;
   color: $color-texto-claro;
 }
@@ -186,7 +187,7 @@ main {
 
   .opciones {
     display: flex;
-    justify-content: space-between; /* Add space between the products */
+    justify-content: space-between; /* Añadir espacio entre los productos */
     gap: 15px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -244,7 +245,7 @@ main {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1; /* Lower z-index to position behind images */
+    z-index: 1; /* Reducir z-index para posicionar detrás de las imágenes */
   }
 
   .fa-chevron-left {
