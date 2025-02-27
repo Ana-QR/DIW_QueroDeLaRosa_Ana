@@ -170,7 +170,7 @@ main {
 
 #productos {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 
   h2 {
     font-family: $fuente-principal;
@@ -181,25 +181,15 @@ main {
 
   .bloque_productos {
     position: relative;
-    overflow: hidden;
     max-width: 100%;
+    padding: 0%;
+    margin: 0%;
   }
 
   .opciones {
     display: flex;
     justify-content: space-between; /* Añadir espacio entre los productos */
     gap: 15px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    white-space: nowrap;
-    padding: 70px;
-    scroll-behavior: smooth;
-  }
-
-  .opciones::-webkit-scrollbar {
-    display: none;
   }
 
   .opcion {
@@ -222,7 +212,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 10px;
   }
 
   .opcion p {
@@ -240,20 +230,21 @@ main {
 
   .fa-chevron-left, .fa-chevron-right {
     position: absolute;
+    justify-content: space-between;
     top: 50%;
+    transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1; /* Reducir z-index para posicionar detrás de las imágenes */
   }
 
   .fa-chevron-left {
-    left: 10px;
+    left: -40px; /* Ajustar según sea necesario */
   }
 
   .fa-chevron-right {
-    right: 10px;
+    right: -40px; /* Ajustar según sea necesario */
   }
 }
 
@@ -292,14 +283,14 @@ footer {
 }
 
 
-/* Estilos responsivos */
+/* Estilos responsivos*/
 @media (max-width: 1024px) {
   .logo {
     width: clamp(80px, 10vw, 140px);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .header {
     flex-direction: column;
     align-items: center;
@@ -327,15 +318,6 @@ footer {
       max-width: 100%;
     }
   }
-
-  #productos .opciones {
-    gap: 10px;
-  }
-
-  #productos .opcion {
-    width: 200px;
-    height: 250px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -346,9 +328,29 @@ footer {
   .barra_busqueda {
     display: none; /* Ocultar en móviles pequeños si es necesario */
   }
+}
 
-  #productos .opcion {
-    width: 150px;
-    height: 200px;
+/* Estilos responsivos para el carrusel (los productos) */
+@media (max-width: 1150px) {
+  .opciones .opcion:nth-of-type(4) {
+    display: none; // Oculta el sexto artículo en pantallas menores a 1100px
+    
+  }
+}
+
+@media (max-width: 900px) {
+  .opciones .opcion:nth-of-type(3) {
+    display: none; // Oculta el cuarto artículo en pantallas menores a 900px
+    
+  }
+}
+
+@media (max-width: 610px) {
+  .opciones .opcion:nth-of-type(2) {
+    display: none; // Oculta el segundo artículo en pantallas menores a 610px
+  }
+
+  .opciones .opcion:nth-of-type(1) {
+    margin: 0 auto; // Centra la única imagen restante
   }
 }
