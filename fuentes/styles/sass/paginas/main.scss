@@ -31,6 +31,7 @@ body {
   background-color: $color-background;
   font-family: $fuente-principal;
   color: $color-texto-claro;
+  padding: 0 20px; /* Añadir padding para evitar que el texto se pegue a los bordes */
 }
 
 /* Estilos del header */
@@ -117,6 +118,8 @@ body {
 /* Contenido del main*/
 main {
   margin: auto;
+  max-width: 1200px; /* Limitar el ancho máximo del contenido */
+  padding: 20px; /* Añadir padding para evitar que el texto se pegue a los bordes */
 }
 
 /* Sobre Nosotros y Procedencia */
@@ -181,15 +184,26 @@ main {
 
   .bloque_productos {
     position: relative;
+    overflow: hidden;
     max-width: 100%;
-    padding: 0%;
-    margin: 0%;
   }
 
   .opciones {
     display: flex;
     justify-content: space-between; /* Añadir espacio entre los productos */
     gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    white-space: nowrap;
+    padding: 70px;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+
+  .opciones::-webkit-scrollbar {
+    display: none;
   }
 
   .opcion {
@@ -230,13 +244,13 @@ main {
 
   .fa-chevron-left, .fa-chevron-right {
     position: absolute;
-    justify-content: space-between;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 1; /* Asegurar que las flechas estén por encima de las imágenes */
   }
 
   .fa-chevron-left {
@@ -290,7 +304,7 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: center;
@@ -318,6 +332,15 @@ footer {
       max-width: 100%;
     }
   }
+
+  #productos .opciones {
+    gap: 10px;
+  }
+
+  #productos .opcion {
+    width: 200px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -328,29 +351,41 @@ footer {
   .barra_busqueda {
     display: none; /* Ocultar en móviles pequeños si es necesario */
   }
-}
 
-/* Estilos responsivos para el carrusel (los productos) */
-@media (max-width: 1150px) {
-  .opciones .opcion:nth-of-type(4) {
-    display: none; // Oculta el sexto artículo en pantallas menores a 1100px
-    
+  #productos .opcion {
+    width: 150px;
+    height: 200px;
   }
 }
 
-@media (max-width: 900px) {
-  .opciones .opcion:nth-of-type(3) {
-    display: none; // Oculta el cuarto artículo en pantallas menores a 900px
-    
+/* Estilos responsivos para el carrusel (los productos)*/
+@media (max-width: 1200px) {
+  .opciones .opcion:nth-child(4) {
+    display: none;
+  }
+  .opciones .opcion {
+    width: 200px;
+    height: 250px;
   }
 }
 
-@media (max-width: 610px) {
-  .opciones .opcion:nth-of-type(2) {
-    display: none; // Oculta el segundo artículo en pantallas menores a 610px
+@media (max-width: 1000px) {
+  .opciones .opcion {
+    width: 150px;
+    height: 200px;
   }
+}
 
-  .opciones .opcion:nth-of-type(1) {
-    margin: 0 auto; // Centra la única imagen restante
+@media (max-width: 768px) {
+  .opciones .opcion {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .opciones .opcion {
+    width: 80px;
+    height: 120px;
   }
 }
