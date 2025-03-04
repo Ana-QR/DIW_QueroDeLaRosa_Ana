@@ -1,0 +1,63 @@
+@use "../utilidades/variables";
+@use "../utilidades/mixins";
+
+/* Contenido del main*/
+main {
+    margin: auto;
+}
+
+/* Sobre Nosotros y Procedencia */
+#sobre-nosotros,
+#procedencia {
+    margin-bottom: 40px;
+    background-color: #{$color-principal};
+    padding: 5%;
+
+    h1 {
+        color: white;
+        text-align: start;
+        padding: 20px;
+        font-family: #{$fuente-principal};
+        font-size: 30px;
+    }
+
+    .bloque_imagen_texto,
+    .bloque_granja_imagen_texto {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        p {
+            color: white;
+            text-align: justify;
+            padding: 20px;
+            font-family: #{$fuente-secundaria};
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 70%;
+            border-radius: 10px;
+            max-width: 750px;
+            /* Ajusta según necesidad */
+            flex-shrink: 0;
+            /* Evita que se reduzca demasiado */
+        }
+
+        button {
+            @extend .auxiliar;
+            margin-top: 20px;
+            /* Añadir margen para posicionar el botón debajo del párrafo */
+            margin-left: 20px;
+        }
+
+        .boton_mas {
+            @extend .auxiliar;
+            margin-top: 20px;
+            /* Añadir margen para posicionar el botón debajo del párrafo */
+            align-self: flex-start;
+            /* Asegurar que el botón se alinee al inicio del contenedor flex */
+        }
+    }
+}

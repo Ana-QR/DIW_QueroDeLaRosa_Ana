@@ -1,0 +1,61 @@
+@use "../utilidades/_variables";
+@use "../utilidades/_mixins";
+
+/* Estilos del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #{$color-encabezado};
+
+  .logo {
+    max-width: 150px; /* Ajusta según necesidad */
+    flex-shrink: 0; /* Evita que se reduzca demasiado */
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .barra_busqueda {
+    display: flex;
+    flex-grow: 2; /* Permite que crezca, pero menos */
+    gap: 10px;
+    padding: 10px; /* Reducir padding para evitar más espacio */
+
+    input {
+      border: none;
+      padding: 8px;
+      flex-grow: 1;
+      width: 100%;
+    }
+    .boton_busqueda {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin: 10px 10px;
+
+    .boton_registro {
+      @extend .auxiliar;
+    }
+
+    .boton_carrito {
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
