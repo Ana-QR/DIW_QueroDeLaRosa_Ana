@@ -1,15 +1,16 @@
-@use "../sass/variables" as var;
+@use "../sass/_variables" as *;
+@use "../sass/_mixins";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var.$fuente-secundaria;
+    font-family: map-get($fuentes, 'fuente-principal');
     font-size: 25px;
 }
 
 header {
-    background-color: var.$color-encabezado;
+    background-color: map-get($colores, 'color-encabezado');
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -17,12 +18,12 @@ header {
 }
 
 body {
-    background-color: var.$color-fondo;
-    color: var.$color-texto-claro;
+    background-color: map-get($colores, 'color-fondo');
+    color: map-get($colores, 'color-texto-claro');
 }
 
 footer {
-    background-color: var.$color-encabezado;
+    background-color: map-get($colores, 'color-encabezado');
     padding: 10px;
     display: flex;
     justify-content: center;

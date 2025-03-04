@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display, serif";
   font-size: 25px;
 }
 
@@ -29,6 +29,7 @@ footer {
   align-items: center;
 }
 
+/* Funciones */
 /*Asignacion de variables para interpolacion */
 /* Clase auxiliar para heredar */
 .auxiliar, #sobre-nosotros .bloque_imagen_texto .boton_mas, #sobre-nosotros .bloque_granja_imagen_texto .boton_mas, #procedencia .bloque_imagen_texto .boton_mas, #procedencia .bloque_granja_imagen_texto .boton_mas, #sobre-nosotros .bloque_imagen_texto button, #sobre-nosotros .bloque_granja_imagen_texto button, #procedencia .bloque_imagen_texto button, #procedencia .bloque_granja_imagen_texto button, .header .actions .boton_registro {
@@ -37,7 +38,7 @@ footer {
   border-radius: 5px;
   padding: 8px 16px;
   cursor: pointer;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   color: #ffffff;
 }
 
@@ -45,7 +46,7 @@ footer {
 body {
   margin: 0;
   background-color: rgba(228, 220, 204, 0.5333333333);
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   color: #ffffff;
 }
 
@@ -58,8 +59,6 @@ body {
   background-color: rgba(184, 164, 127, 0);
 }
 .header .logo {
-  display: flex;
-  align-items: center;
   max-width: 150px; /* Ajusta según necesidad */
   flex-shrink: 0; /* Evita que se reduzca demasiado */
 }
@@ -110,7 +109,7 @@ body {
 .menu a {
   text-decoration: none;
   color: black;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
 }
 .menu .objeto_menu_activo {
   background-color: #BCA48C;
@@ -126,13 +125,13 @@ main {
 #sobre-nosotros, #procedencia {
   margin-bottom: 40px;
   background-color: #BF8563;
-  padding: 20px;
+  padding: 5%;
 }
 #sobre-nosotros h1, #procedencia h1 {
   color: white;
   text-align: start;
   padding: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   font-size: 30px;
 }
 #sobre-nosotros .bloque_imagen_texto, #sobre-nosotros .bloque_granja_imagen_texto, #procedencia .bloque_imagen_texto, #procedencia .bloque_granja_imagen_texto {
@@ -145,7 +144,7 @@ main {
   color: white;
   text-align: justify;
   padding: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
 }
 #sobre-nosotros .bloque_imagen_texto img, #sobre-nosotros .bloque_granja_imagen_texto img, #procedencia .bloque_imagen_texto img, #procedencia .bloque_granja_imagen_texto img {
@@ -168,7 +167,7 @@ main {
   padding: 50px;
 }
 #productos h2 {
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   font-size: 30px;
   color: #644434;
   margin-bottom: 20px;
@@ -214,11 +213,10 @@ main {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 16px;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
 }
 #productos .fa-chevron-left, #productos .fa-chevron-right {
   position: absolute;
-  justify-content: space-between;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.8);
@@ -254,7 +252,6 @@ footer .social-media a {
 }
 footer .footer-info {
   text-align: end;
-  align-items: center;
   padding: 10px;
   color: white;
   font-size: 16px;
