@@ -1,0 +1,115 @@
+@use "../utilidades/_variables";
+@use "../utilidades/_mixins";
+@use "../base/_fuentes";
+
+/* Estilos del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #{$color-encabezado}; // Usando variable de color para el fondo del header
+
+  .logo {
+    max-width: 150px; // Limita el ancho máximo del logo
+    flex-shrink: 0; // Evita que el logo se reduzca demasiado
+
+    img {
+      width: 100%; // Asegura que la imagen del logo ocupe todo el contenedor
+      height: auto; // Mantiene la proporción de la imagen
+    }
+  }
+
+  .barra_busqueda {
+    display: flex;
+    flex-grow: 2; // Permite que el contenedor crezca, pero menos que otros elementos flexibles
+    gap: 10px; // Espacio entre los elementos hijos
+    padding: 10px; // Espaciado interno del contenedor
+
+    input {
+      border: none; // Sin borde para el input
+      padding: 8px; // Espaciado interno del input
+      flex-grow: 1; // Permite que el input crezca para ocupar el espacio disponible
+      width: 100%; // Asegura que el input ocupe todo el ancho del contenedor
+      @include font-size(pequeno); // Aplicar tamaño de texto pequeño
+    }
+
+    .boton_busqueda {
+      background: none; // Sin fondo para el botón
+      border: none; // Sin borde para el botón
+      cursor: pointer; // Cambia el cursor al pasar sobre el botón
+      @include font-size(pequeno); // Aplicar tamaño de texto pequeño
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px; // Espacio entre los botones de acción
+    margin: 10px 10px; // Margen alrededor del contenedor de acciones
+
+    .boton_registro {
+      @extend .auxiliar; // Extiende los estilos del selector .auxiliar
+      @include font-size(pequeno); // Aplicar tamaño de texto pequeño
+    }
+
+    .boton_carrito {
+      @include flex-center; // Incluye mixin para centrar el contenido
+      border: none; // Sin borde para el botón
+      padding: 8px; // Espaciado interno del botón
+      cursor: pointer; // Cambia el cursor al pasar sobre el botón
+      width: 40px; // Ancho fijo del botón
+      height: 40px; // Alto fijo del botón
+      @include font-size(iconsize); // Aplicar tamaño de texto para iconos
+    }
+  }
+}
+
+header {
+  background-color: var.$color-encabezado; // Usando variable de color para el fondo del header
+  padding: 10px; // Espaciado interno del header
+  @include flex-center; // Incluye mixin para centrar el contenido
+  justify-content: space-between; // Espacio entre los elementos hijos
+}
+
+@mixin responsive-logo-header() {
+  @media (max-width: 1024px) {
+    .logo {
+      width: clamp(80px, 10vw, 140px); // Ajusta el ancho del logo según el tamaño de la pantalla
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .header {
+      flex-direction: column; // Cambia la dirección del flex a columna
+      align-items: center; // Centra los elementos en la columna
+    }
+
+    .barra_busqueda {
+      flex-grow: 1; // Permite que el contenedor crezca para ocupar el espacio disponible
+      width: 90%; // Ancho del contenedor de búsqueda
+    }
+
+    .logo {
+      width: 100px; // Ancho fijo del logo
+    }
+
+    .actions {
+      gap: 5px; // Espacio reducido entre los botones de acción
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column; // Cambia la dirección del flex a columna
+    align-items: center; // Centra los elementos en la columna
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    .barra_busqueda {
+      display: none; // Oculta la barra de búsqueda en pantallas pequeñas
+    }
+  }
+}
