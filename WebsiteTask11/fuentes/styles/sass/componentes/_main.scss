@@ -1,9 +1,8 @@
 /* Llamada a los elementos */
 @use "../utilidades/variables" as variables; 
-@use "../utilidades/mixins"; 
-@use "../utilidades/funciones"; 
+@use "../utilidades/mixins" as mixins; 
+@use "../utilidades/funciones" as funciones; 
 @use "../base/base";
-@use "../base/fuentes"; 
 
 /* Asignación de variables para interpolación */
 $color-background: variables.$color-fondo; // Asigna el valor de la variable $color-fondo a $color-background
@@ -11,7 +10,7 @@ $color-encabezado: variables.$color-encabezado; // Asigna el valor de la variabl
 $color-principal: variables.$color-principal; // Asigna el valor de la variable $color-principal a $color-principal
 $color-secundario: variables.$color-secundario; // Asigna el valor de la variable $color-secundario a $color-secundario
 $color-activo: variables.$color-activo; // Asigna el valor de la variable $color-activo a $color-activo
-$color-texto-oscuro: variables.$color-textexto-oscuro; // Asigna el valor de la variable $color-textexto-oscuro a $color-texto-oscuro
+$color-texto-oscuro: variables.$color-texto-oscuro; // Asigna el valor de la variable $color-textexto-oscuro a $color-texto-oscuro
 $color-texto-claro: variables.$color-texto-claro; // Asigna el valor de la variable $color-texto-claro a $color-texto-claro
 $fuente-principal: variables.$fuente-principal; // Asigna el valor de la variable $fuente-principal a $fuente-principal
 $fuente-secundaria: variables.$fuente-secundaria; // Asigna el valor de la variable $fuente-secundaria a $fuente-secundaria
@@ -25,7 +24,6 @@ $fuente-secundaria: variables.$fuente-secundaria; // Asigna el valor de la varia
     cursor: pointer;
     font-family: #{variables.$fuente-principal}; // Establece la fuente usando la variable $fuente-principal
     color: #{variables.$color-texto-claro}; // Establece el color del texto usando la variable $color-texto-claro
-    @include tamanos.font-size(pequeno); // Aplica el tamaño de fuente pequeño
 }
 
 /* Estilos generales */
@@ -47,7 +45,6 @@ body {
         text-decoration: none;
         color: black;
         font-family: #{variables.$fuente-principal}; // Establece la fuente usando la variable $fuente-principal
-        @include tamanos.font-size(parrafo); // Aplica el tamaño de fuente para párrafo
     }
 
     .objeto_menu_activo {
@@ -74,7 +71,6 @@ main {
         text-align: start;
         padding: 20px;
         font-family: #{variables.$fuente-principal}; // Establece la fuente usando la variable $fuente-principal
-        @include tamanos.font-size(titulo); // Aplica el tamaño de fuente para título
     }
 
     .bloque_imagen_texto,
@@ -89,7 +85,6 @@ main {
             text-align: justify;
             padding: 20px;
             font-family: #{variables.$fuente-secundaria}; // Establece la fuente usando la variable $fuente-secundaria
-            @include tamanos.font-size(parrafo); // Aplica el tamaño de fuente para párrafo
         }
 
         img {
@@ -102,7 +97,7 @@ main {
             @extend .auxiliar; // Extiende los estilos de la clase .auxiliar
             margin-top: 20px; // Añade margen superior para posicionar el botón debajo del párrafo
             margin-left: 20px;
-            @include mixins.zoom-on-hover; // Aplica el mixin zoom-on-hover
+            @include funciones.zoom-on-hover; // Aplica el mixin zoom-on-hover
         }
 
         .boton_mas {

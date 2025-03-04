@@ -1,6 +1,5 @@
-@use '../utilidades/variables';
+@use '../utilidades/variables' as var;
 @use '../utilidades/mixins';
-@use '../base/fuentes';
 
 // Carrusel de productos
 // Estilos para el carrusel de productos
@@ -9,9 +8,9 @@
   padding: 50px;
 
   h2 {
-    font-family: #{$fuente-principal}; // Usa la fuente principal definida en variables
-    @include font-size(subtitulo); // Aplica el tamaño de fuente para subtítulos usando un mixin
-    color: #{$color-texto-oscuro}; // Usa el color de texto oscuro definido en variables
+    font-family: var.$fuente-principal; // Usa la fuente principal definida en variables
+    font-size: 25px;
+    color: var.$color-texto-oscuro; // Usa el color de texto oscuro definido en variables
     margin-bottom: 20px;
   }
 
@@ -61,8 +60,8 @@
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    @include font-size(parrafo); // Aplica el tamaño de fuente para párrafos usando un mixin
-    font-family: #{$fuente-principal}; // Usa la fuente principal definida en variables
+    font-size: 15px;
+    font-family: var.$fuente-principal; // Usa la fuente principal definida en variables
   }
 
   .fa-chevron-left,
@@ -74,8 +73,7 @@
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    @include font-size(iconsize); // Aplica el tamaño de fuente para iconos usando un mixin
-    @include flex-center; // Centra el contenido usando un mixin
+    font-size: 20px;
   }
 
   .fa-chevron-left {
@@ -115,6 +113,5 @@
   .opciones .opcion:nth-of-type(1) {
     margin: 0 auto;
     /* Centra la única imagen restante */
-    @include flex-center; // Centra el contenido usando un mixin
   }
 }

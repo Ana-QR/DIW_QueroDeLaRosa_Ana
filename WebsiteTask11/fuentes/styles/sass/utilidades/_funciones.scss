@@ -1,6 +1,6 @@
-@mixin zoom-on-hover($scale: 1.1) {
+@mixin zoom-on-hover {
     transition: transform 0.3s ease-in-out;
     &:hover {
-        transform: scale($scale);
+      transform: scale(1.1);
     }
-}
+  }

@@ -1,5 +1,5 @@
-@use "../sass/_variables" as var;
-@use "../sass/_mixins";
+@use "../utilidades/_variables" as var;
+@use "../utilidades/_mixins";
 
 * {
     margin: 0;
@@ -7,9 +7,4 @@
     box-sizing: border-box;
     font-family: var.$fuente-principal;
     font-size: 25px;
-}
-
-body {
-    background-color: var.$color-fondo;
-    color: var.$color-texto-claro;
 }

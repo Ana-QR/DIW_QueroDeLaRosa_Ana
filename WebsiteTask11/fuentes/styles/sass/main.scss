@@ -1,25 +1,8 @@
-@import "base/_base.scss";
-@import "base/_fuentes.scss";
-@import "componentes/_main.scss";
-@import "componentes/_menu.scss";
-@import "componentes/_footer.scss";
-@import "componentes/_header.scss";
-@import "utilidades/_funciones";
-@import "utilidades/_mixins";
-@import "utilidades/_variables";
-
-
-@use "../utilidades/_variables";
-@use "../utilidades/_mixins";
-@use "../utilidades/_funciones";
-
-
-@use "../base/_base";
-@use "../base/fuentes";
-
-
-
-@use "componentes/_main.scss";
-@use "componentes/_menu.scss";
-@use "componentes/_footer.scss";
-@use "componentes/_header.scss";
+@use "utilidades/variables";
+@use "utilidades/mixins";
+@use "utilidades/funciones";
+@use "base/base";
+@use "componentes/main";
+@use "componentes/footer";
+@use "componentes/header";
+@use "componentes/productos";

@@ -1,7 +1,6 @@
 @use "../utilidades/variables" as var; // Importa las variables desde el archivo variables.scss y las asigna al alias 'var'
 @use "../utilidades/mixins"; // Importa los mixins desde el archivo mixins.scss
 @use "../utilidades/funciones"; // Importa las funciones desde el archivo funciones.scss
-@use "../base/fuentes" as fnt; // Importa el archivo fuentes.scss desde la carpeta base y lo asigna al alias 'fnt'
 
 /* Estilos del pie de página */
 footer {
@@ -26,7 +25,6 @@ footer {
     text-align: end; 
     padding: 10px; 
     color: white; 
-    @include fnt.font-size(parrafo); // Establece el tamaño del texto usando un mixin
     font-family: var.$fuente-secundaria; // Establece la fuente del texto usando una variable
 
     a {
