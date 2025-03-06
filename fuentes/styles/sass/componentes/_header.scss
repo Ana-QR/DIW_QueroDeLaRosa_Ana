@@ -32,6 +32,8 @@ $fuente-secundaria: variables.$fuente-secundaria; // Asigna el valor de la varia
   align-items: center;
   padding: 20px 30px;
   background-color: #{variables.$color-encabezado}; // Usando variable de color para el fondo del header
+  margin: 0 auto; // Centra el header horizontalmente
+  margin-right: 20px;
 
   .logo {
     max-width: 150px; // Limita el ancho máximo del logo
@@ -89,18 +91,17 @@ header {
   justify-content: space-between; // Espacio entre los elementos hijos
 }
 
-@mixin responsive-logo-header() {
-  @media (max-width: 1024px) {
-    .logo {
-      width: clamp(80px, 10vw, 140px); // Ajusta el ancho del logo según el tamaño de la pantalla
-    }
-  }
 
-  @media (max-width: 1000px) {
-    .header {
-      flex-direction: column; // Cambia la dirección del flex a columna
-      align-items: center; // Centra los elementos en la columna
-    }
+@media (max-width: 1024px) {
+  .header .logo {
+    width: clamp(80px, 10vw, 140px); // Ajusta el ancho del logo según el tamaño de la pantalla
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column; // Cambia la dirección del flex a columna
+    align-items: center; // Centra los elementos en la columna
 
     .barra_busqueda {
       flex-grow: 1; // Permite que el contenedor crezca para ocupar el espacio disponible
@@ -115,9 +116,7 @@ header {
       gap: 5px; // Espacio reducido entre los botones de acción
     }
   }
-}
 
-@media (max-width: 1000px) {
   header {
     flex-direction: column; // Cambia la dirección del flex a columna
     align-items: center; // Centra los elementos en la columna
@@ -125,9 +124,7 @@ header {
 }
 
 @media (max-width: 480px) {
-  header {
-    .barra_busqueda {
-      display: none; // Oculta la barra de búsqueda en pantallas pequeñas
-    }
+  header .barra_busqueda {
+    display: none; // Oculta la barra de búsqueda en pantallas pequeñas
   }
 }

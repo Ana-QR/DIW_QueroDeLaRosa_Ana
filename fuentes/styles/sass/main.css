@@ -7,175 +7,6 @@
   font-size: 25px;
 }
 
-body {
-  background-color: rgba(228, 220, 204, 0.5333333333);
-  color: #ffffff;
-}
-
-/* Llamada a los elementos */
-/* Asignación de variables para interpolación */
-/* Clase auxiliar para heredar */
-.auxiliar, #sobre-nosotros .bloque_imagen_texto .boton_mas,
-#sobre-nosotros .bloque_granja_imagen_texto .boton_mas,
-#procedencia .bloque_imagen_texto .boton_mas,
-#procedencia .bloque_granja_imagen_texto .boton_mas, #sobre-nosotros .bloque_imagen_texto button,
-#sobre-nosotros .bloque_granja_imagen_texto button,
-#procedencia .bloque_imagen_texto button,
-#procedencia .bloque_granja_imagen_texto button {
-  background-color: #644434;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-family: Playfair Display, serif;
-  color: #ffffff;
-}
-
-/* Estilos generales */
-body {
-  margin: 0;
-  background-color: rgba(228, 220, 204, 0.5333333333);
-  font-family: Playfair Display, serif;
-  color: #ffffff;
-}
-
-/* Estilos del menú */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-}
-.menu a {
-  text-decoration: none;
-  color: black;
-  font-family: Playfair Display, serif;
-}
-.menu .objeto_menu_activo {
-  background-color: #BCA48C;
-  padding: 5px 10px;
-}
-
-/* Contenido del main*/
-main {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Sobre Nosotros y Procedencia */
-#sobre-nosotros,
-#procedencia {
-  margin-bottom: 40px;
-  background-color: #BF8563;
-  padding: 5%;
-}
-#sobre-nosotros h1,
-#procedencia h1 {
-  color: white;
-  text-align: start;
-  padding: 20px;
-  font-family: Playfair Display, serif;
-}
-#sobre-nosotros .bloque_imagen_texto,
-#sobre-nosotros .bloque_granja_imagen_texto,
-#procedencia .bloque_imagen_texto,
-#procedencia .bloque_granja_imagen_texto {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-}
-#sobre-nosotros .bloque_imagen_texto p,
-#sobre-nosotros .bloque_granja_imagen_texto p,
-#procedencia .bloque_imagen_texto p,
-#procedencia .bloque_granja_imagen_texto p {
-  color: white;
-  text-align: justify;
-  padding: 20px;
-  font-family: Montserrat, sans-serif;
-}
-#sobre-nosotros .bloque_imagen_texto img,
-#sobre-nosotros .bloque_granja_imagen_texto img,
-#procedencia .bloque_imagen_texto img,
-#procedencia .bloque_granja_imagen_texto img {
-  border-radius: 10px;
-  max-width: 750px;
-  flex-shrink: 0;
-}
-#sobre-nosotros .bloque_imagen_texto button,
-#sobre-nosotros .bloque_granja_imagen_texto button,
-#procedencia .bloque_imagen_texto button,
-#procedencia .bloque_granja_imagen_texto button {
-  margin-top: 20px;
-  margin-left: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-#sobre-nosotros .bloque_imagen_texto button:hover,
-#sobre-nosotros .bloque_granja_imagen_texto button:hover,
-#procedencia .bloque_imagen_texto button:hover,
-#procedencia .bloque_granja_imagen_texto button:hover {
-  transform: scale(1.1);
-}
-#sobre-nosotros .bloque_imagen_texto .boton_mas,
-#sobre-nosotros .bloque_granja_imagen_texto .boton_mas,
-#procedencia .bloque_imagen_texto .boton_mas,
-#procedencia .bloque_granja_imagen_texto .boton_mas {
-  margin-top: 20px;
-  align-self: flex-start;
-}
-
-/* Estilos responsivos */
-@media (max-width: 1024px) {
-  .logo {
-    width: clamp(80px, 10vw, 140px);
-  }
-  #sobre-nosotros .bloque_imagen_texto,
-  #procedencia .bloque_granja_imagen_texto {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #sobre-nosotros .bloque_imagen_texto img,
-  #procedencia .bloque_granja_imagen_texto img {
-    max-width: 100%;
-  }
-}
-/* Estilos del pie de página */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(184, 164, 127, 0);
-  padding: 20px;
-  margin-top: auto;
-  /* Estilos de la sección de redes sociales */
-}
-footer .social-media {
-  padding: 30px 0;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-footer .social-media a {
-  color: white;
-}
-footer .footer-info {
-  text-align: end;
-  padding: 10px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-footer .footer-info a {
-  color: white;
-}
-
-/* Estilos responsivos del footer */
-@media (max-width: 1000px) {
-  footer {
-    max-width: 100%;
-  }
-}
 /* Asignación de variables para interpolación */
 /* Clase auxiliar para heredar */
 .auxiliar, .header .actions .boton_registro {
@@ -195,6 +26,8 @@ footer .footer-info a {
   align-items: center;
   padding: 20px 30px;
   background-color: rgba(184, 164, 127, 0);
+  margin: 0 auto;
+  margin-right: 20px;
 }
 .header .logo {
   max-width: 150px;
@@ -246,7 +79,26 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .header .logo {
+    width: clamp(80px, 10vw, 140px);
+  }
+}
 @media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .barra_busqueda {
+    flex-grow: 1;
+    width: 90%;
+  }
+  .header .logo {
+    width: 100px;
+  }
+  .header .actions {
+    gap: 5px;
+  }
   header {
     flex-direction: column;
     align-items: center;
@@ -257,34 +109,169 @@ header {
     display: none;
   }
 }
+/* Llamada a los elementos */
+/* Asignación de variables */
+/* Clase auxiliar para reutilizar estilos */
+.auxiliar, #sobre-nosotros .bloque_imagen_texto button,
+#sobre-nosotros .bloque_granja_imagen_texto button,
+#procedencia .bloque_imagen_texto button,
+#procedencia .bloque_granja_imagen_texto button {
+  background-color: #644434;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  background-color: rgba(228, 220, 204, 0.5333333333);
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+
+/* Estilos del menú */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+.menu .objeto_menu_activo {
+  background-color: #BCA48C;
+  padding: 5px 10px;
+}
+
+/* Contenido principal */
+main {
+  width: 85%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Secciones: Sobre Nosotros y Procedencia */
+#sobre-nosotros,
+#procedencia {
+  padding: 5%;
+  background-color: #BF8563;
+  width: 100%;
+  margin: 20px auto;
+}
+#sobre-nosotros h1,
+#procedencia h1 {
+  color: white;
+  text-align: start;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+#sobre-nosotros .bloque_imagen_texto,
+#sobre-nosotros .bloque_granja_imagen_texto,
+#procedencia .bloque_imagen_texto,
+#procedencia .bloque_granja_imagen_texto {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+#sobre-nosotros .bloque_imagen_texto p,
+#sobre-nosotros .bloque_granja_imagen_texto p,
+#procedencia .bloque_imagen_texto p,
+#procedencia .bloque_granja_imagen_texto p {
+  color: white;
+  text-align: justify;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+#sobre-nosotros .bloque_imagen_texto img,
+#sobre-nosotros .bloque_granja_imagen_texto img,
+#procedencia .bloque_imagen_texto img,
+#procedencia .bloque_granja_imagen_texto img {
+  border-radius: 10px;
+  max-width: 750px;
+  flex-shrink: 0;
+}
+#sobre-nosotros .bloque_imagen_texto button,
+#sobre-nosotros .bloque_granja_imagen_texto button,
+#procedencia .bloque_imagen_texto button,
+#procedencia .bloque_granja_imagen_texto button {
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+#sobre-nosotros .bloque_imagen_texto button:hover,
+#sobre-nosotros .bloque_granja_imagen_texto button:hover,
+#procedencia .bloque_imagen_texto button:hover,
+#procedencia .bloque_granja_imagen_texto button:hover {
+  transform: scale(1.1);
+}
+#sobre-nosotros .bloque_imagen_texto .boton_mas,
+#sobre-nosotros .bloque_granja_imagen_texto .boton_mas,
+#procedencia .bloque_imagen_texto .boton_mas,
+#procedencia .bloque_granja_imagen_texto .boton_mas {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1400px) {
+  .logo {
+    width: clamp(80px, 10vw, 140px);
+  }
+  #sobre-nosotros .bloque_imagen_texto,
+  #procedencia .bloque_granja_imagen_texto {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #sobre-nosotros .bloque_imagen_texto img,
+  #procedencia .bloque_granja_imagen_texto img {
+    max-width: 100%;
+  }
+}
 #productos {
   text-align: center;
   padding: 50px;
 }
 #productos h2 {
   font-family: "Playfair Display", serif;
-  font-size: 25px;
+  font-size: 30px;
   color: #644434;
   margin-bottom: 20px;
 }
 #productos .bloque_productos {
   position: relative;
-  max-width: 100%;
-  padding: 0%;
-  margin: 0%;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 #productos .opciones {
   display: flex;
-  justify-content: space-between;
-  /* Añadir espacio entre los productos */
+  justify-content: center;
+  align-items: center;
   gap: 15px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+#productos .opciones::-webkit-scrollbar {
+  display: none;
 }
 #productos .opcion {
   flex: 0 0 auto;
   width: 250px;
   height: 300px;
   position: relative;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -321,39 +308,86 @@ header {
   border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
+  z-index: 10;
 }
 #productos .fa-chevron-left {
-  left: -40px;
-  /* Ajustar según sea necesario */
+  left: 10px;
 }
 #productos .fa-chevron-right {
-  right: -40px;
-  /* Ajustar según sea necesario */
+  right: 10px;
 }
 
-/* Estilos responsivos para el carrusel (los productos) */
-@media (max-width: 1200px) {
+/* Estilos responsivos */
+@media (max-width: 1600px) {
+  .opciones {
+    justify-content: center;
+  }
+  .opciones .opcion:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1250px) {
+  .opciones {
+    justify-content: center;
+  }
   .opciones .opcion:nth-child(4) {
     display: none;
-    /* Oculta el cuarto artículo en pantallas menores a 1200px */
   }
 }
-@media (max-width: 900px) {
-  .opciones .opcion:nth-of-type(3) {
-    display: none;
-    /* Oculta el tercer artículo en pantallas menores a 900px */
+@media (max-width: 930px) {
+  .opciones {
+    justify-content: center;
   }
-}
-@media (max-width: 610px) {
-  .opciones .opcion:nth-of-type(2) {
+  .opciones .opcion:nth-child(3) {
     display: none;
-    /* Oculta el segundo artículo en pantallas menores a 610px */
   }
 }
 @media (max-width: 480px) {
-  .opciones .opcion:nth-of-type(1) {
+  .opciones .opcion:nth-of-type(2) {
     margin: 0 auto;
-    /* Centra la única imagen restante */
+  }
+}
+/* Estilos del pie de página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #644434;
+  padding: 20px;
+  margin-top: auto;
+  /* Sección de redes sociales */
+  /* Información del footer */
+}
+footer .social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+footer .social-media a {
+  color: white;
+}
+footer .footer-info {
+  text-align: right;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+footer .footer-info a {
+  color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .social-media {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  footer .footer-info {
+    text-align: center;
   }
 }
 
