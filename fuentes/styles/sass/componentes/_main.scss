@@ -55,7 +55,8 @@ body {
 
 /* Contenido principal */
 main {
-    width: 85%;  // Ajusta el ancho del contenido dentro de la página
+    width: 80%; // Ancho del contenido
+    max-width: 1980px; // Ancho máximo
     margin: 30px auto; // Centrado automático
     display: flex;
     flex-direction: column;

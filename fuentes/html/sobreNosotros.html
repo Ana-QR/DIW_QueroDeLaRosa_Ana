@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros | Repostería Bioartesa</title>
-    <link rel="stylesheet" href="../styles/sass/main.css">
+    <link rel="stylesheet" href="../styles/sass/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,11 +13,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
-<nav class="menu">
-    <a href="./sobreNosotros.html" class="objeto_menu">Sobre Nosotros</a>
-    <a href="./tienda.html" class="objeto_menu">Tienda</a>
-</nav>
 
 <body>
     <header class="header">
@@ -45,32 +40,129 @@
         </aside>
     </header>
 
+    <nav class="menu">
+        <a href="./sobreNosotros.html" class="objeto_menu">Sobre Nosotros</a>
+        <a href="./tienda.html" class="objeto_menu">Tienda</a>
+    </nav>
+
     <main class="sobre-nosotros">
-        <h1 class="titulo">Sobre nosotros</h1>
         
         <section class="historia">
             <h2>NUESTRA HISTORIA</h2>
             <p><em>Nuestra historia sigue creciendo, y queremos que tú formes parte de ella. <strong>Porque para nosotros, cada cliente es parte de esta dulce aventura.</strong></em></p>
-            <img src="../img/JPG/madalenaGlaseada1920.jpg" alt="Imagen de repostería artesanal">
+            <article>
+            <figure>
+                <picture>
+                    <!-- Imágenes para resolución máxima de 400px -->
+                    <source srcset="../img/WEBP/magdalenaGlaseada400.webp" media="(min-width: 400px)" type="image/webp">
+                    <source srcset="../img/JPG/magdalenaGlaseada400.jpg" media="(min-width: 400px)" type="image/jpg">
+                    <source srcset="../img/PNG/magdalenaGlaseada400.png" media="(min-width: 400px)" type="image/png">
+
+                    <!-- Imágenes para resolución máxima de 480px -->
+                    <source srcset="../img/WEBP/magdalenaGlaseada480.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="../img/JPG/magdalenaGlaseada480.jpg" media="(min-width: 480px)" type="image/jpg">
+                    <source srcset="../img/PNG/magdalenaGlaseada480.png" media="(min-width: 480px)" type="image/png">
+
+                    <!-- Imágenes para resolución máxima de 768px -->
+                    <source srcset="../img/WEBP/magdalenaGlaseada768.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="../img/JPG/magdalenaGlaseada768.jpg" media="(min-width: 768px)" type="image/jpg">
+
+                    <!-- Imágenes por defecto para pantallas más grandes -->
+                    <source srcset="../img/WEBP/magdalenaGlaseada1200.webp" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="../img/JPG/magdalenaGlaseada1200.jpg" media="(min-width: 1200px)" type="image/jpg">
+                    <source srcset="../img/PNG/magdalenaGlaseada1200.png" media="(min-width: 1200px)" type="image/png">
+
+                    <!-- Imágenes por defecto para pantallas más grandes -->
+                    <source srcset="../img/WEBP/magdalenaGlaseada1920.webp" type="image/webp">
+                    <source srcset="../img/JPG/magdalenaGlaseada1920.jpg" type="image/jpg">
+                    <source srcset="../img/PNG/magdalenaGlaseada1920.png"  type="image/png">
+
+                    <img src="../img/JPG/magdalenaGlaseada1920.jpg" alt="Imagen de repostería artesanal">
+                </picture>
+            </figure>
+            </article>
         </section>
         
         <section class="seccion-historia">
-            <article>
-                <img src="../img/JPG/reposteroPan768.jpg" alt="Panadero cortando pan">
+            <article class="repostero">
+                <figure>
+                    <picture>
+                        <!-- Imágenes para resolución máxima de 400px -->
+                        <source srcset="../img/WebP/reposteroPan400.webp" media="(max-width: 400px)" type="image/webp">
+                        <source srcset="../img/JPG/reposteroPan400.jpg" media="(max-width: 400px)" type="image/jpg">
+                        <source srcset="../img/PNG/reposteroPan400.png" media="(max-width: 400px)" type="image/png">
+    
+                        <!-- Imágenes para resolución máxima de 480px -->
+                        <source srcset="../img/WebP/reposteroPan480.webp" media="(max-width: 480px)" type="image/webp">
+                        <source srcset="../img/JPG/reposteroPan480.jpg" media="(max-width: 480px)" type="image/jpg">
+                        <source srcset="../img/PNG/reposteroPan480.png" media="(max-width: 480px)" type="image/png">
+    
+                        <!-- Imágenes para resolución máxima de 768px -->
+                        <source srcset="../img/WebP/reposteroPan768.webp" media="(max-width: 768px)" type="image/webp">
+                        <source srcset="../img/JPG/reposteroPan768.jpg" media="(max-width: 768px)" type="image/jpg">
+                        <source srcset="../img/PNG/reposteroPan768.png" media="(max-width: 768px)" type="image/png">
+
+                        <img src="../img/JPG/reposteroPan768.jpg" alt="Panadero cortando pan">
+                    </picture>
+                </figure>
                 <h3>TODO COMENZÓ...</h3>
                 <p>Todo comenzó en un pequeño y encantador pueblo de la península, donde la pasión por la repostería artesanal se convirtió en el motor de una idea: crear dulces que fueran mucho más que postres, pequeños disparos de felicidad, sabor, tradición y amor. Usando recetas familiares y técnicas tradicionales, la fundadora decidió abrir una pastelería con el único objetivo de ofrecer productos que reflejaran autenticidad, calidad y cuidado en cada detalle.</p>
             </article>
-            <article>
+
+            <article class="artesano">
+                <figure>
+                    <picture>
+                        <!-- Imágenes para resolución máxima de 400px -->
+                        <source srcset="../img/WebP/artesanoPan400.webp" media="(max-width: 400px)" type="image/webp">
+                        <source srcset="../img/JPG/artesanoPan400.jpg" media="(max-width: 400px)" type="image/jpg">
+                        <source srcset="../img/PNG/artesanoPan400.png" media="(max-width: 400px)" type="image/png">
+    
+                        <!-- Imágenes para resolución máxima de 480px -->
+                        <source srcset="../img/WebP/artesanoPan480.webp" media="(max-width: 480px)" type="image/webp">
+                        <source srcset="../img/JPG/artesanoPan480.jpg" media="(max-width: 480px)" type="image/jpg">
+                        <source srcset="../img/PNG/artesanoPan480.png" media="(max-width: 480px)" type="image/png">
+    
+                        <!-- Imágenes para resolución máxima de 768px -->
+                        <source srcset="../img/WebP/artesanoPan768.webp" media="(max-width: 768px)" type="image/webp">
+                        <source srcset="../img/JPG/artesanoPan768.jpg" media="(max-width: 768px)" type="image/jpg">
+                        <source srcset="../img/PNG/artesanoPan768.png" media="(max-width: 768px)" type="image/png">
+
+                        <img src="../img/JPG/artesanoPan768.jpg" alt="Pan artesanal">
+                    </picture>
+                </figure>
                 <h3>CON EL PASO DEL TIEMPO...</h3>
                 <p>Con el paso del tiempo, y gracias al boca a boca, lo que empezó como un negocio local comenzó a llamar la atención de clientes de todo el pueblo. Las personas recorrían kilómetros para probar nuestros postres, que ahora describían como únicos e irrepetibles. Así, lo que alguna vez fue un sueño pequeño empezó a crecer, siempre con el foco en los clientes y la dedicación inquebrantable de quienes están detrás de cada receta.</p>
-                <img src="../img/JPG/artesanoPan768.jpg" alt="Pan artesanal">
             </article>
         </section>
 
         <section class="granjas">
             <h3>NUESTRAS GRANJAS</h3>
-            <img src="../img/JPG/vacas1200.jpg" alt="Granja sostenible">
             <p>Nuestras granjas colaboradoras son libres de crueldad animal, garantizando el bienestar de los animales en cada etapa de producción. Estos proveedores no solo se aseguran de cumplir con los más altos estándares de calidad, sino que también aplican prácticas éticas que se reflejan en el inmejorable sabor y frescura de la leche, la pureza de los huevos o la calidad de la harina utilizada en cada uno de nuestros productos. Nuestro objetivo es un futuro de trabajo consciente y responsable.</p>
+            <figure>
+                <picture>
+                    <!-- Imágenes para resolución máxima de 400px -->
+                    <source srcset="../img/WebP/vacas400.webp" media="(max-width: 400px)" type="image/webp">
+                    <source srcset="../img/JPG/vacas400.jpg" media="(max-width: 400px)" type="image/jpg">
+                    <source srcset="../img/PNG/vacas400.png" media="(max-width: 400px)" type="image/png">
+
+                    <!-- Imágenes para resolución máxima de 480px -->
+                    <source srcset="../img/WebP/vacas480.webp" media="(max-width: 480px)" type="image/webp">
+                    <source srcset="../img/JPG/vacas480.jpg" media="(max-width: 480px)" type="image/jpg">
+                    <source srcset="../img/PNG/vacas480.png" media="(max-width: 480px)" type="image/png">
+
+                    <!-- Imágenes para resolución máxima de 768px -->
+                    <source srcset="../img/WebP/vacas768.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="../img/JPG/vacas768.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="../img/PNG/vacas768.png" media="(max-width: 768px)" type="image/png">
+
+                    <!-- Imágenes por defecto para pantallas más grandes -->
+                    <source srcset="../img/WebP/vacas1200.webp" type="image/webp">
+                    <source srcset="../img/JPG/vacas1200.jpg" type="image/jpg">
+                    <source srcset="../img/PNG/vacas1200.png" type="image/png">
+
+                    <img src="../img/JPG/vacas1200.jpg" alt="Granja sostenible">
+                </picture>
+            </figure>
         </section>
     </main>
 
