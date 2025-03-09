@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras | Repostería Bioartesa</title>
-    <link rel="stylesheet" href="../styles/sass/main.scss">
+    <link rel="stylesheet" href="../styles/sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <figure class="logo">
-            <a href="#inicio">
+            <a href="../inicio.html">
                 <picture>
                     <source srcset="../img/WEBP/LOGO.webp" type="image/webp">
                     <source srcset="../img/PNG/LOGO.png" type="image/png">
@@ -33,12 +33,17 @@
             </button>
         </form>
         <aside class="actions">
-            <a href="#registro" class="boton_registro">Regístrate</a>
+            <a href="./registro.html" class="boton_registro">Regístrate</a>
             <button class="boton_carrito" aria-label="Carrito de compras">
                 <i class="fa-solid fa-basket-shopping" style="color: #CC9487;"></i>
             </button>
         </aside>
     </header>
+
+    <nav class="menu">
+        <a href="./sobreNosotros.html" class="objeto_menu">Sobre Nosotros</a>
+        <a href="./tienda.html" class="objeto_menu">Tienda</a>
+    </nav>
 
     <main class="carrito">
         <h1 class="titulo">Cesta</h1>
@@ -56,8 +61,18 @@
                     <tbody>
                         <tr>
                             <td>
-                                <img src="../img/rollitos_canela.jpg" alt="Rollitos de canela">
-                                Rollitos de canela
+                                <article id="rollitos">
+                                    <figure>
+                                        <picture>
+                                            <!-- Imágenes para resolución máxima de 400px -->
+                                            <source srcset="../img/WebP/rollitosCanela400.webp" media="(max-width: 400px)" type="image/webp">
+                                            <source srcset="../img/JPG/rollitosCanela.jpg" media="(max-width: 400px)" type="image/jpg">
+                                            <source srcset="../img/PNG/rollitosCanela400.png" media="(max-width: 400px)" type="image/png">
+                                            <img src="../img/JPG/rollitosCanela400.jpg" alt="Rollitos de canela">
+                                        </picture>
+                                    </figure>
+                                    <p>Rollitos de canela</p>
+                                </article>
                             </td>
                             <td>€</td>
                             <td>x</td>
@@ -65,8 +80,20 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="../img/barquillos_dulces.jpg" alt="Barquillos dulces">
-                                Barquillos dulces
+                                <article id="magdalenasChocolate">
+                                    <figure>
+                                        <picture>
+                                            <!-- Imágenes para resolución máxima de 400px -->
+                                            <source srcset="../img/WebP//magdalenaChocolate400.webp" media="(max-width: 400px)" type="image/webp">
+                                            <source srcset="../img/JPG//magdalenaChocolate400.jpg" media="(max-width: 400px)" type="image/jpg">
+                                            <source srcset="../img/PNG//magdalenaChocolate400.png" media="(max-width: 400px)" type="image/png">
+                                            
+                                            <img src="../img/JPG/magdalenaChocolate400.jpg" alt="Magdalenas de chocolate">
+                                        </picture>
+                                    </figure>
+                                    <p>Magdalena de chocolate</p>
+                                </article>
+                                        
                             </td>
                             <td>€</td>
                             <td>x</td>

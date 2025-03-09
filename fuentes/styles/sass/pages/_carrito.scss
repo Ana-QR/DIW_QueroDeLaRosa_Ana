@@ -1,0 +1,49 @@
+@use '../utilidades/variables' as var;
+@use '../utilidades/mixins';
+
+// Estilos para la página de Carrito
+.carrito {
+    text-align: center;
+    padding: 2rem;
+
+    .contenedor-carrito {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .lista-articulos {
+        flex: 2;
+        background: #d2b48c;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: left;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            border-bottom: 1px solid #7a5c52;
+        }
+
+        th {
+            text-align: left;
+            color: #5a3e36;
+        }
+    }
+
+    .factura {
+        flex: 1;
+        background: #b08968;
+        padding: 1rem;
+        border-radius: 10px;
+
+        h2 {
+            color: #5a3e36;
+        }
+    }
+}

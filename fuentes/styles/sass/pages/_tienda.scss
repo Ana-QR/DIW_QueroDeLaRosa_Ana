@@ -1,0 +1,37 @@
+@use '../utilidades/variables' as var;
+@use '../utilidades/mixins';
+
+#tienda {
+    text-align: center;
+    padding: 2rem;
+    .productosVender {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Cambiado a 3 columnas fijas
+        gap: 2rem;
+        padding: 2rem;
+
+        article {
+            background: #d2b48c;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px; // Pequeño radio en cada imagen
+            }
+
+            h3 {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                color: #5a3e36;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #7a5c52;
+            }
+        }
+    }
+}

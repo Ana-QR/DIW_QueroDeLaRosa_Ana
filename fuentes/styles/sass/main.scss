@@ -8,3 +8,10 @@
 @use "componentes/main";
 @use "componentes/productos";
 @use "componentes/footer";
+
+@use "pages/sobreNosotros";
+@use "pages/tienda";
+@use "pages/carrito";
+@use "pages/registro";
+
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';

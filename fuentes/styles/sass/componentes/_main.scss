@@ -70,7 +70,7 @@ main {
     margin: 20px auto; // Centra los elementos horizontalmente
 
     h1 {
-        color: white;
+        color: variables.$color-texto-claro;
         text-align: start;
         padding: 20px;
         font-family: variables.$fuente-principal;

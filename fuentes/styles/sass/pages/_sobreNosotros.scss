@@ -1,0 +1,74 @@
+@use '../utilidades/variables' as var;
+@use '../utilidades/mixins';
+
+// Estilos para la página Sobre Nosotros
+.sobre-nosotros {
+    text-align: center;
+    padding: 2rem;
+
+    .historia {
+        background: #d2b48c;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+
+        h2 {
+            font-size: 1.8rem;
+            color: #5a3e36;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #7a5c52;
+        }
+    }
+
+    .seccion-historia {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+
+        article {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #f5e1c5;
+            padding: 1.5rem;
+            border-radius: 10px;
+
+            img {
+                width: 150px;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                color: #5a3e36;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #7a5c52;
+            }
+        }
+    }
+
+    .granjas {
+        background: #b08968;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+
+        h3 {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #f8f0e3;
+        }
+    }
+}

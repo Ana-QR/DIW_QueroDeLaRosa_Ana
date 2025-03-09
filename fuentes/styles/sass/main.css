@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 * {
   margin: 0;
   padding: 0;
@@ -168,7 +169,7 @@ main {
 }
 #sobre-nosotros h1,
 #procedencia h1 {
-  color: white;
+  color: #ffffff;
   text-align: start;
   padding: 20px;
   font-family: "Playfair Display", serif;
@@ -388,6 +389,195 @@ footer .footer-info a {
   }
   footer .footer-info {
     text-align: center;
+  }
+}
+.sobre-nosotros {
+  text-align: center;
+  padding: 2rem;
+}
+.sobre-nosotros .historia {
+  background: #d2b48c;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.sobre-nosotros .historia h2 {
+  font-size: 1.8rem;
+  color: #5a3e36;
+}
+.sobre-nosotros .historia p {
+  font-size: 1.2rem;
+  color: #7a5c52;
+}
+.sobre-nosotros .seccion-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.sobre-nosotros .seccion-historia article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f5e1c5;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.sobre-nosotros .seccion-historia article img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+.sobre-nosotros .seccion-historia article h3 {
+  font-size: 1.5rem;
+  color: #5a3e36;
+}
+.sobre-nosotros .seccion-historia article p {
+  font-size: 1rem;
+  color: #7a5c52;
+}
+.sobre-nosotros .granjas {
+  background: #b08968;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.sobre-nosotros .granjas h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.sobre-nosotros .granjas p {
+  font-size: 1rem;
+  color: #f8f0e3;
+}
+
+#tienda {
+  text-align: center;
+  padding: 2rem;
+}
+#tienda .productosVender {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+#tienda .productosVender article {
+  background: #d2b48c;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+#tienda .productosVender article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+#tienda .productosVender article h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #5a3e36;
+}
+#tienda .productosVender article p {
+  font-size: 1rem;
+  color: #7a5c52;
+}
+
+.carrito {
+  text-align: center;
+  padding: 2rem;
+}
+.carrito .contenedor-carrito {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+.carrito .lista-articulos {
+  flex: 2;
+  background: #d2b48c;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+}
+.carrito .lista-articulos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.carrito .lista-articulos th, .carrito .lista-articulos td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #7a5c52;
+}
+.carrito .lista-articulos th {
+  text-align: left;
+  color: #5a3e36;
+}
+.carrito .factura {
+  flex: 1;
+  background: #b08968;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.carrito .factura h2 {
+  color: #5a3e36;
+}
+
+/* Clase auxiliar para reutilizar estilos */
+.auxiliar, .registro .formulario form .boton-enviar {
+  background-color: #644434;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+
+.registro {
+  text-align: center;
+  padding: 2rem;
+}
+.registro .formulario {
+  background: #BF8563;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.registro .formulario h2 {
+  font-size: 1.5rem;
+  color: #644434;
+  text-align: center;
+}
+.registro .formulario form {
+  display: flex;
+  flex-direction: column;
+}
+.registro .formulario form label {
+  font-size: 1rem;
+  color: #644434;
+  margin-top: 1rem;
+}
+.registro .formulario form input[type=email],
+.registro .formulario form input[type=password] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #644434;
+  margin-top: 0.3rem;
+}
+.registro .formulario form .recordar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.registro .formulario form .boton-enviar {
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .registro .formulario {
+    width: 90%;
+    padding: 1rem;
   }
 }
 

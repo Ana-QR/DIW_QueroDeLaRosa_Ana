@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repostería Bioartesa</title>
-    <link rel="stylesheet" href="./fuentes/styles/sass/main.css">
+    <link rel="stylesheet" href="styles/sass/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
 <body>
     <header class="header">
         <figure class="logo">
-            <a href="#inicio">
-                <source srcset="./fuentes/img/WEBP/LOGO.webp" type="image/webp">
-                <source srcset="./fuentes/img/PNG/LOGO.png" type="image/png">
-                <source srcset="./fuentes/img/JPG/LOGO.jpg" type="image/jpg">
-                <img src="./fuentes/img/PNG/LOGO.png" alt="LOGO">
+            <a href="./inicio.html">
+                <source srcset="./img/WEBP/LOGO.webp" type="image/webp">
+                <source srcset="./img/PNG/LOGO.png" type="image/png">
+                <source srcset="./img/JPG/LOGO.jpg" type="image/jpg">
+                <img src="./img/PNG/LOGO.png" alt="LOGO">
             </a>
         </figure>
         <form class="barra_busqueda">
@@ -32,7 +32,7 @@
             </button>
         </form>
         <aside class="actions">
-            <a href="#registro" class="boton_registro">Regístrate</a>
+            <a href="./html/registro.html" class="boton_registro">Regístrate</a>
             <button class="boton_carrito" aria-label="Carrito de compras">
                 <i class="fa-solid fa-basket-shopping" style="color: #CC9487;"></i>
             </button>
@@ -40,8 +40,8 @@
     </header>
 
     <nav class="menu">
-        <a href="#sobre nosotros" class="objeto_menu">Sobre Nosotros</a>
-        <a href="#tienda" class="objeto_menu">Tienda</a>
+        <a href="./html/sobreNosotros.html" class="objeto_menu">Sobre Nosotros</a>
+        <a href="./html/tienda.html" class="objeto_menu">Tienda</a>
     </nav>
 
     <main>
@@ -62,32 +62,34 @@
                     </article>
 
                     <article>
-                        <button>Más...</button>
+                        <button>
+                            <a href="./html/sobreNosotros.html">Más...</a>
+                        </button>
                     </article>
                 </section>
                 <figure>
                     <picture>
                         <!-- Imágenes para resolución máxima de 400px -->
-                        <source srcset="./fuentes/img/WebP/croissantsFresas400.webp" media="(max-width: 400px)" type="image/webp">
-                        <source srcset="./fuentes/img/JPG/croissantsFresas400.jpg" media="(max-width: 400px)" type="image/jpg">
-                        <source srcset="./fuentes/img/PNG/croissantsFresas400.png" media="(max-width: 400px)" type="image/png">
+                        <source srcset="./img/WebP/croissantsFresas400.webp" media="(max-width: 400px)" type="image/webp">
+                        <source srcset="./img/JPG/croissantsFresas400.jpg" media="(max-width: 400px)" type="image/jpg">
+                        <source srcset="./img/PNG/croissantsFresas400.png" media="(max-width: 400px)" type="image/png">
 
                         <!-- Imágenes para resolución máxima de 480px -->
-                        <source srcset="./fuentes/img/WebP/croissantsFresas480.webp" media="(max-width: 480px)" type="image/webp">
-                        <source srcset="./fuentes/img/JPG/croissantsFresas480.jpg" media="(max-width: 480px)" type="image/jpg">
-                        <source srcset="./fuentes/img/PNG/croissantsFresas480.png" media="(max-width: 480px)" type="image/png">
+                        <source srcset="./img/WebP/croissantsFresas480.webp" media="(max-width: 480px)" type="image/webp">
+                        <source srcset="./img/JPG/croissantsFresas480.jpg" media="(max-width: 480px)" type="image/jpg">
+                        <source srcset="./img/PNG/croissantsFresas480.png" media="(max-width: 480px)" type="image/png">
                     
                         <!-- Imágenes para resolución máxima de 768px -->
-                        <source srcset="./fuentes/img/WebP/croissantsFresas768.webp" media="(max-width: 768px)" type="image/webp">
-                        <source srcset="./fuentes/img/JPG/croissantsFresas768.jpg" media="(max-width: 768px)" type="image/jpg">
-                        <source srcset="./fuentes/img/PNG/croissantsFresas768.png" media="(max-width: 768px)" type="image/png">
+                        <source srcset="./img/WebP/croissantsFresas768.webp" media="(max-width: 768px)" type="image/webp">
+                        <source srcset="./img/JPG/croissantsFresas768.jpg" media="(max-width: 768px)" type="image/jpg">
+                        <source srcset="./img/PNG/croissantsFresas768.png" media="(max-width: 768px)" type="image/png">
                     
                         <!-- Imágenes por defecto para pantallas más grandes -->
-                        <source srcset="./fuentes/img/WebP/croissantsFresas1200.webp" type="image/webp">
-                        <source srcset="./fuentes/img/JPG/croissantsFresas1200.jpg" type="image/jpg">
-                        <source srcset="./fuentes/img/PNG/croissantsFresas1200.png" type="image/png">
+                        <source srcset="./img/WebP/croissantsFresas1200.webp" type="image/webp">
+                        <source srcset="./img/JPG/croissantsFresas1200.jpg" type="image/jpg">
+                        <source srcset="./img/PNG/croissantsFresas1200.png" type="image/png">
                     
-                        <img src="./fuentes/img/JPG/croissantsFresas1200.jpg" alt="Croissants de fresas y nata">
+                        <img src="./img/JPG/croissantsFresas1200.jpg" alt="Croissants de fresas y nata">
                     </picture>
                     
                 </figure>
@@ -101,37 +103,37 @@
                     <i class="fa-solid fa-chevron-left" style="color: #644434;"></i>
                     <article class="opcion">
                         <figure>
-                            <source srcset="./fuentes/img/WebP/panetone400.webp" type="image/webp">
-                            <source srcset="./fuentes/img/PNG/panetone400.png" type="image/png">
-                            <source srcset="./fuentes/img/JPG/panetone400.jpg" type="image/jpg">
-                            <img src="./fuentes/img/JPG/panetone400.jpg" alt="Panetone">
+                            <source srcset="./img/WebP/panetone400.webp" type="image/webp">
+                            <source srcset="./img/PNG/panetone400.png" type="image/png">
+                            <source srcset="./img/JPG/panetone400.jpg" type="image/jpg">
+                            <img src="./img/JPG/panetone400.jpg" alt="Panetone">
                             <p>Más vendido</p>
                         </figure>
                     </article>
                     <article class="opcion">
                         <figure>
-                            <source srcset="./fuentes/img/WebP/tartaFresas400.webp" type="image/webp">
-                            <source srcset="./fuentes/img/PNG/tartaFresas400.png" type="image/png">
-                            <source srcset="./fuentes/img/JPG/tartaFresas400.jpg" type="image/jpg">
-                            <img src="./fuentes/img/JPG/tartaFresas400.jpg" alt="Tarta de fresas">
+                            <source srcset="./img/WebP/tartaFresas400.webp" type="image/webp">
+                            <source srcset="./img/PNG/tartaFresas400.png" type="image/png">
+                            <source srcset="./img/JPG/tartaFresas400.jpg" type="image/jpg">
+                            <img src="./img/JPG/tartaFresas400.jpg" alt="Tarta de fresas">
                             <p>Productos veganos</p>
                         </figure>
                     </article>
                     <article class="opcion">
                         <figure>
-                            <source srcset="./fuentes/img/WebP/torrijas400.webp" type="image/webp">
-                            <source srcset="./fuentes/img/PNG/torrijas400.png" type="image/png">
-                            <source srcset="./fuentes/img/JPG/torrijas400.jpg" type="image/jpg">
-                            <img src="./fuentes/img/JPG/torrijas400.jpg" alt="Torrijas">
+                            <source srcset="./img/WebP/torrijas400.webp" type="image/webp">
+                            <source srcset="./img/PNG/torrijas400.png" type="image/png">
+                            <source srcset="./img/JPG/torrijas400.jpg" type="image/jpg">
+                            <img src="./img/JPG/torrijas400.jpg" alt="Torrijas">
                             <p>Productos locales</p>
                         </figure>
                     </article>
                     <article class="opcion">
                         <figure>
-                            <source srcset="./fuentes/img/WebP/magdalenasNuecesPasas400.webp" type="image/webp">
-                            <source srcset="./fuentes/img/PNG/magdalenasNuecesPasas400.png" type="image/png">
-                            <source srcset="./fuentes/img/JPG/magdalenasNuecesPasas400.jpg" type="image/jpg">
-                            <img src="./fuentes/img/JPG/magdalenasNuecesPasas400.jpg"
+                            <source srcset="./img/WebP/magdalenasNuecesPasas400.webp" type="image/webp">
+                            <source srcset="./img/PNG/magdalenasNuecesPasas400.png" type="image/png">
+                            <source srcset="./img/JPG/magdalenasNuecesPasas400.jpg" type="image/jpg">
+                            <img src="./img/JPG/magdalenasNuecesPasas400.jpg"
                                 alt="Magdalenas de nueces y pasas">
                             <p>Sin azúcar</p>
                         </figure>
@@ -159,27 +161,27 @@
                 <figure>
                     <picture>
                         <!-- Imágenes para resolución máxima de 400px -->
-                        <source media="(max-width: 400px)" srcset="./fuentes/img/WebP/granjera400.webp" type="image/webp">
-                        <source media="(max-width: 400px)" srcset="./fuentes/img/PNG/granjera400.png" type="image/png">
-                        <source media="(max-width: 400px)" srcset="./fuentes/img/JPG/granjera400.jpg" type="image/jpeg">
+                        <source media="(max-width: 400px)" srcset="./img/WebP/granjera400.webp" type="image/webp">
+                        <source media="(max-width: 400px)" srcset="./img/PNG/granjera400.png" type="image/png">
+                        <source media="(max-width: 400px)" srcset="./img/JPG/granjera400.jpg" type="image/jpeg">
 
                         <!-- Imágenes para resolución máxima de 480px -->
-                        <source media="(max-width: 480px)" srcset="./fuentes/img/WebP/granjera480.webp" type="image/webp">
-                        <source media="(max-width: 480px)" srcset="./fuentes/img/PNG/granjera480.png" type="image/png">
-                        <source media="(max-width: 480px)" srcset="./fuentes/img/JPG/granjera480.jpg" type="image/jpeg">
+                        <source media="(max-width: 480px)" srcset="./img/WebP/granjera480.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="./img/PNG/granjera480.png" type="image/png">
+                        <source media="(max-width: 480px)" srcset="./img/JPG/granjera480.jpg" type="image/jpeg">
                     
                         <!-- Imágenes para resolución máxima de 768px -->
-                        <source media="(max-width: 768px)" srcset="./fuentes/img/WebP/granjera768.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="./fuentes/img/PNG/granjera768.png" type="image/png">
-                        <source media="(max-width: 768px)" srcset="./fuentes/img/JPG/granjera768.jpg" type="image/jpeg">
+                        <source media="(max-width: 768px)" srcset="./img/WebP/granjera768.webp" type="image/webp">
+                        <source media="(max-width: 768px)" srcset="./img/PNG/granjera768.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="./img/JPG/granjera768.jpg" type="image/jpeg">
                     
                         <!-- Imágenes por defecto para pantallas más grandes -->
-                        <source srcset="./fuentes/img/WebP/granjera1200.webp" type="image/webp">
-                        <source srcset="./fuentes/img/PNG/granjera1200.png" type="image/png">
-                        <source srcset="./fuentes/img/JPG/granjera1200.jpg" type="image/jpeg">
+                        <source srcset="./img/WebP/granjera1200.webp" type="image/webp">
+                        <source srcset="./img/PNG/granjera1200.png" type="image/png">
+                        <source srcset="./img/JPG/granjera1200.jpg" type="image/jpeg">
                     
                         <!-- Imagen de respaldo si el navegador no soporta <picture> -->
-                        <img src="./fuentes/img/JPG/granjera1200.jpg" alt="Granjera con pañuelo azul">
+                        <img src="./img/JPG/granjera1200.jpg" alt="Granjera con pañuelo azul">
                     </picture>
                     
                 </figure>
