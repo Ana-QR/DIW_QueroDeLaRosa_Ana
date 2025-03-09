@@ -636,37 +636,46 @@ footer .footer-info a {
   }
 }
 
-#tienda {
-  text-align: center;
-  padding: 2rem;
-}
-#tienda .productosVender {
+#productosVender {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem;
+  text-align: center;
 }
-#tienda .productosVender article {
+#productosVender article {
   background: #d2b48c;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
-#tienda .productosVender article img {
+#productosVender article:hover {
+  transform: scale(1.05);
+}
+#productosVender article img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   border-radius: 5px;
 }
-#tienda .productosVender article h3 {
-  margin-top: 1rem;
+#productosVender article p {
   font-size: 1.2rem;
   color: #5a3e36;
-}
-#tienda .productosVender article p {
-  font-size: 1rem;
-  color: #7a5c52;
+  margin-top: 1rem;
 }
 
+/* Responsividad para adaptar los productos */
+@media (max-width: 1200px) {
+  #productosVender {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #productosVender {
+    grid-template-columns: 1fr;
+  }
+}
 .auxiliar, .carrito .cupon button, .carrito button {
   background-color: #644434;
   border: none;

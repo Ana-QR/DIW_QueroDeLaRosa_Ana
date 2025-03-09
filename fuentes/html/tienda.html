@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repostería Bioartesa</title>
-    <link rel="stylesheet" href="../styles/sass/main.css">
+    <link rel="stylesheet" href="../styles/sass/main.scss">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
                 <picture>
                     <source srcset="../img/WEBP/LOGO.webp" type="image/webp">
                     <source srcset="../img/PNG/LOGO.png" type="image/png">
-                    <source srcset="../img/JPPG/LOGO.jpg" type="image/jpg">
+                    <source srcset="../img/JPG/LOGO.jpg" type="image/jpg">
                     <img src="../img/PNG/LOGO.png" alt="LOGO">
                 </picture>
             </a>
@@ -34,9 +34,11 @@
             </button>
         </form>
         <aside class="actions">
-            <a href="#registro" class="boton_registro">Regístrate</a>
+            <a href="./registro" class="boton_registro">Regístrate</a>
             <button class="boton_carrito" aria-label="Carrito de compras">
-                <i class="fa-solid fa-basket-shopping" style="color: #CC9487;"></i>
+                <a href="./carrito.html">
+                    <i class="fa-solid fa-basket-shopping" style="color: #CC9487;"></i>
+                </a>
             </button>
         </aside>
     </header>
@@ -55,7 +57,7 @@
                         <i class="fa-solid fa-chevron-left" style="color: #644434;"></i>
                         <article class="opcion">
                             <figure>
-                                <source srcset="../img/WebP/panetone400.webp" type="image/webp">
+                                <source srcset="../img/WEBP/panetone400.webp" type="image/webp">
                                 <source srcset="../img/PNG/panetone400.png" type="image/png">
                                 <source srcset="../img/JPG/panetone400.jpg" type="image/jpg">
                                 <img src="../img/JPG/panetone400.jpg" alt="Panetone">
@@ -64,7 +66,7 @@
                         </article>
                         <article class="opcion">
                             <figure>
-                                <source srcset="../img/WebP/tartaFresas400.webp" type="image/webp">
+                                <source srcset="../img/WEBP/tartaFresas400.webp" type="image/webp">
                                 <source srcset="../img/PNG/tartaFresas400.png" type="image/png">
                                 <source srcset="../img/JPG/tartaFresas400.jpg" type="image/jpg">
                                 <img src="../img/JPG/tartaFresas400.jpg" alt="Tarta de fresas">
@@ -73,7 +75,7 @@
                         </article>
                         <article class="opcion">
                             <figure>
-                                <source srcset="../img/WebP/torrijas400.webp" type="image/webp">
+                                <source srcset="../img/WEBP/torrijas400.webp" type="image/webp">
                                 <source srcset="../img/PNG/torrijas400.png" type="image/png">
                                 <source srcset="../img/JPG/torrijas400.jpg" type="image/jpg">
                                 <img src="../img/JPG/torrijas400.jpg" alt="Torrijas">
@@ -82,7 +84,7 @@
                         </article>
                         <article class="opcion">
                             <figure>
-                                <source srcset="../img/WebP/panRustico400.webp" type="image/webp">
+                                <source srcset="../img/WEBP/panRustico400.webp" type="image/webp">
                                 <source srcset="../img/PNG/panRustico400.png" type="image/png">
                                 <source srcset="../img/JPG/panRustico400.jpg" type="image/jpg">
                                 <img src="../img/JPG/panRustico400.jpg" alt="Panes">
@@ -100,22 +102,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/rollitosCanela400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/rollitosCanela400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/rollitosCanela400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/rollitosCanela400.png" media="(max-width: 400px)" type="image/png">
 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/rollitosCanela480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/rollitosCanela480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/rollitosCanela480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/rollitosCanela480.png" media="(max-width: 480px)" type="image/png">
 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/rollitosCanela768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/rollitosCanela768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/rollitosCanela768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/rollitosCanela768.png" media="(max-width: 768px)" type="image/png">
 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/rollitosCanela1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/rollitosCanela1200.webp" type="image/webp">
                             <source srcset="../img/JPG/rollitosCanela1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/rollitosCanela1200.png" type="image/png">
 
@@ -129,22 +130,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/magdalenasNuecesPasas400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenasNuecesPasas400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenasNuecesPasas400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/magdalenasNuecesPasas400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/magdalenasNuecesPasas480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenasNuecesPasas480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenasNuecesPasas480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/magdalenasNuecesPasas480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/magdalenasNuecesPasas768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenasNuecesPasas768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenasNuecesPasas768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/magdalenasNuecesPasas768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/magdalenasNuecesPasas1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenasNuecesPasas1200.webp" type="image/webp">
                             <source srcset="../img/JPG/magdalenasNuecesPasas1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/magdalenasNuecesPasas1200.png" type="image/png">
                 
@@ -158,22 +158,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/torrijas400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/torrijas400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/torrijas400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/torrijas400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/torrijas480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/torrijas480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/torrijas480.jpg" media="(max-width: 480px)" type="image/jpg">
-                            <source srcset="../img/PNG/ctorrijas480.png" media="(max-width: 480px)" type="image/png">
+                            <source srcset="../img/PNG/torrijas480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/torrijas768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/torrijas768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/torrijas768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/torrijas768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/torrijas1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/torrijas1200.webp" type="image/webp">
                             <source srcset="../img/JPG/torrijas1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/torrijas1200.png" type="image/png">
                 
@@ -188,22 +187,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP//magdalenaChocolate400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP//magdalenaChocolate400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG//magdalenaChocolate400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG//magdalenaChocolate400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP//magdalenaChocolate480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP//magdalenaChocolate480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG//magdalenaChocolate480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG//magdalenaChocolate480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP//magdalenaChocolate768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP//magdalenaChocolate768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG//magdalenaChocolate768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG//magdalenaChocolate768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP//magdalenaChocolate1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP//magdalenaChocolate1200.webp" type="image/webp">
                             <source srcset="../img/JPG//magdalenaChocolate1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG//magdalenaChocolate1200.png" type="image/png">
                 
@@ -217,22 +215,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/magdalenaCafeLavanda400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenaCafeLavanda400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenaCafeLavanda400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/magdalenaCafeLavanda400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/magdalenaCafeLavanda480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenaCafeLavanda480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenaCafeLavanda480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/magdalenaCafeLavanda480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/magdalenaCafeLavanda768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenaCafeLavanda768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/magdalenaCafeLavanda768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/magdalenaCafeLavanda768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/magdalenaCafeLavanda1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/magdalenaCafeLavanda1200.webp" type="image/webp">
                             <source srcset="../img/JPG/magdalenaCafeLavanda1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/magdalenaCafeLavanda1200.png" type="image/png">
                 
@@ -246,22 +243,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/panetone400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/panetone400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/panetone400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/panetone400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/panetone480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/panetone480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/panetone480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/panetone480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/panetone768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/panetone768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/panetone768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/panetone768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/panetone1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/panetone1200.webp" type="image/webp">
                             <source srcset="../img/JPG/panetone1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/panetone1200.png" type="image/png">
                 
@@ -275,22 +271,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/tartaFresas400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaFresas400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/tartaFresas400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/tartaFresas400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/tartaFresas480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaFresas480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/tartaFresas480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/tartaFresas480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/tartaFresas768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaFresas768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/tartaFresas768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/tartaFresas768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/tartaFresas1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/tartaFresas1200.webp" type="image/webp">
                             <source srcset="../img/JPG/tartaFresas1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/tartaFresas1200.png" type="image/png">
                 
@@ -304,22 +299,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/pastelChocolate400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/pastelChocolate400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/pastelChocolate400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/pastelChocolate400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/pastelChocolate480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/pastelChocolate480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/pastelChocolate480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/pastelChocolate480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/pastelChocolate768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/pastelChocolate768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/pastelChocolate768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/pastelChocolate768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/pastelChocolate1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/pastelChocolate1200.webp" type="image/webp">
                             <source srcset="../img/JPG/pastelChocolate1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/pastelChocolate1200.png" type="image/png">
                 
@@ -333,22 +327,21 @@
                     <figure>
                         <picture>
                             <!-- Imágenes para resolución máxima de 400px -->
-                            <source srcset="../img/WebP/tartaZanahoria400.webp" media="(max-width: 400px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaZanahoria400.webp" media="(max-width: 400px)" type="image/webp">
                             <source srcset="../img/JPG/tartaZanahoria400.jpg" media="(max-width: 400px)" type="image/jpg">
                             <source srcset="../img/PNG/tartaZanahoria400.png" media="(max-width: 400px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 480px -->
-                            <source srcset="../img/WebP/tartaZanahoria480.webp" media="(max-width: 480px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaZanahoria480.webp" media="(max-width: 480px)" type="image/webp">
                             <source srcset="../img/JPG/tartaZanahoria480.jpg" media="(max-width: 480px)" type="image/jpg">
                             <source srcset="../img/PNG/tartaZanahoria480.png" media="(max-width: 480px)" type="image/png">
                 
                             <!-- Imágenes para resolución máxima de 768px -->
-                            <source srcset="../img/WebP/tartaZanahoria768.webp" media="(max-width: 768px)" type="image/webp">
+                            <source srcset="../img/WEBP/tartaZanahoria768.webp" media="(max-width: 768px)" type="image/webp">
                             <source srcset="../img/JPG/tartaZanahoria768.jpg" media="(max-width: 768px)" type="image/jpg">
-                            <source srcset="../img/PNG/tartaZanahoria768.png" media="(max-width: 768px)" type="image/png">
                 
                             <!-- Imágenes por defecto para pantallas más grandes -->
-                            <source srcset="../img/WebP/tartaZanahoria1200.webp" type="image/webp">
+                            <source srcset="../img/WEBP/tartaZanahoria1200.webp" type="image/webp">
                             <source srcset="../img/JPG/tartaZanahoria1200.jpg" type="image/jpg">
                             <source srcset="../img/PNG/tartaZanahoria1200.png" type="image/png">
                 
