@@ -7,8 +7,8 @@
     }
   },
   "scripts": {
-    "dev": "parcel fuente/inicio.html --dist-dir des",
-    "build": "parcel build fuente/inicio.html --dist-dir prod",
+    "dev": "parcel fuentes/inicio.html --dist-dir des",
+    "build": "parcel build fuentes/inicio.html --dist-dir prod",
     "clean": "rimraf .parcel-cache des prod"
   },
   "author": "",
