@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "targets": {
     "default": {
-      "source": "fuentes/styles/sass/main.scss"
+      "source": "styles/sass/main.scss"
     }
   },
   "scripts": {
-    "dev": "parcel fuentes/inicio.html --dist-dir des",
-    "build": "parcel build fuentes/inicio.html --dist-dir prod",
+    "dev": "parcel inicio.html --dist-dir des",
+    "build": "parcel build inicio.html --dist-dir prod",
     "clean": "rimraf .parcel-cache des prod"
   },
   "author": "",
